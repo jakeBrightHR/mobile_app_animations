@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:mobile_app_animations/challenge_one/challenge_one_part_two_painter.dart';
-import 'package:mobile_app_animations/challenge_one/spinning_square.dart';
+import 'package:mobile_app_animations/challenge_one/spinning_square_part_two.dart';
 
 class ChallengeOnePartTwo extends StatefulWidget {
   const ChallengeOnePartTwo({super.key});
@@ -12,7 +12,7 @@ class ChallengeOnePartTwo extends StatefulWidget {
 
 class _ChallengeOnePartTwoState extends State<ChallengeOnePartTwo> with SingleTickerProviderStateMixin {
 
-  SpinningSquare spinningSquare = SpinningSquare(0);
+  SpinningSquarePartTwo spinningSquare = SpinningSquarePartTwo(angle: 0);
 
   late Ticker ticker;
 

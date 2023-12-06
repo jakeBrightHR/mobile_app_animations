@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:mobile_app_animations/challenge_one/spinning_square_part_two.dart';
+import 'package:mobile_app_animations/challenge_one/spinning_square_part_three.dart';
 
-class ChallengeOnePartTwoPainter extends CustomPainter {
-  SpinningSquarePartTwo spinningSquare;
+class ChallengeOnePartThreePainter extends CustomPainter {
+  SpinningSquarePartThree spinningSquare;
 
-  ChallengeOnePartTwoPainter(this.spinningSquare);
+  ChallengeOnePartThreePainter(this.spinningSquare);
 
   @override
   void paint(Canvas canvas, Size size) {
@@ -14,6 +14,7 @@ class ChallengeOnePartTwoPainter extends CustomPainter {
       ..style = PaintingStyle.stroke;
 
     Path path = spinningSquare.buildPath(size);
+    paint.color = spinningSquare.getColor();
 
     canvas.drawPath(path, paint);
   }
