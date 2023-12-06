@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mobile_app_animations/challenge_one/challenge_one_part_four.dart';
 import 'package:mobile_app_animations/challenge_one/challenge_one_part_one.dart';
 import 'package:mobile_app_animations/challenge_one/challenge_one_part_three.dart';
 import 'package:mobile_app_animations/challenge_one/challenge_one_part_two.dart';
@@ -36,6 +37,11 @@ class MainApp extends StatelessWidget {
               context,
               'Challenge One: Part Three',
               const ChallengeOnePartThree(),
+            ),
+            button(
+              context,
+              'Challenge One: Part Four',
+              const ChallengeOnePartFour(),
             ),
           ],
         ),
