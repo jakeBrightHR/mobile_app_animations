@@ -3,6 +3,8 @@ import 'package:mobile_app_animations/challenge_one/challenge_one_part_four.dart
 import 'package:mobile_app_animations/challenge_one/challenge_one_part_one.dart';
 import 'package:mobile_app_animations/challenge_one/challenge_one_part_three.dart';
 import 'package:mobile_app_animations/challenge_one/challenge_one_part_two.dart';
+import 'package:mobile_app_animations/challenge_two/challenge_two_part_one.dart';
+import 'package:mobile_app_animations/challenge_two/challenge_two_part_two.dart';
 
 void main() {
   runApp(
@@ -42,6 +44,17 @@ class MainApp extends StatelessWidget {
               context,
               'Challenge One: Part Four',
               const ChallengeOnePartFour(),
+            ),
+            const SizedBox(height: 100),
+            button(
+              context,
+              'Challenge Two: Part One',
+              const ChallengeTwoPartOne(),
+            ),
+            button(
+              context,
+              'Challenge Two: Part Two',
+              const ChallengeTwoPartTwo(),
             ),
           ],
         ),
